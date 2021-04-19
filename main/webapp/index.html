@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina principal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form action="potenciar-cubo" method="GET">
+            <h3>Formulario para elevar un numero al cubo</h3>
+            <input type="number" name="numero">
+            <input type="submit" value="potenciar">
+        </form>
+        <form action="pitagoras" method="POST">
+            <h3>Formulario para hallar la longitud de la hipotenusa</h3>
+            <p>
+                <label for="cateto_a">Cateto A </label> 
+                <input type="text" name="cateto_a" id="cateto_a">
+            </p>
+            <p>
+                <label for="cateto_b">Cateto B </label>
+                <input type="text" name="cateto_b" id="cateto_b">
+            </p>
+            <p><input type="submit" id="calcular" value="calcular" onclick="return comprobar()"></p>
+        </form>
+        
+        <h3>Generador de numeros random</h3>
+        <a href="numeros-random">Ir al generador</a>
+
+        <h3>Contador de visitas</h3>
+        <a href="contador">Ir al contador de visitas</a>
+        
+        <script src="scripts/pitagoras.js"> </script>
+    </body>
+</html>
